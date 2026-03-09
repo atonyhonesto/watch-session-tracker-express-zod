@@ -7,7 +7,7 @@ A small TypeScript + Node.js proof of concept real-time watch-session service pr
 This implementation stays intentionally simple:
 
 - **Express REST API** for low-friction event ingestion and querying
-- **In-memory session store** because the PRD explicitly allows it for a long-running v1 service and emphasizes simplicity over production hardening
+- **In-memory session store** because the PRD explicitly allows it for a long-running service and emphasizes simplicity over production hardening
 - **45-second activity window** to interpret "currently active" using 30-second heartbeats with a small grace period
 - **Event ID deduplication** to reduce double-counting when clients retry requests
 
