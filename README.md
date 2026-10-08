@@ -1,4 +1,18 @@
-# Watch Session Tracker (Zod, Express and Supertest) version
+# Watch Session Tracker: Express + Zod Build
+
+[![tests](https://github.com/atonyhonesto/watch-session-tracker-express-zod/actions/workflows/tests.yml/badge.svg)](https://github.com/atonyhonesto/watch-session-tracker-express-zod/actions/workflows/tests.yml) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white)
+
+The same real-time watch-session service, built on the libraries a Node team would most likely standardise on: **Express** for HTTP, **Zod** for validation and **Supertest** for API tests. Session logic, API and tests match the [lightweight build](https://github.com/atonyhonesto/watch-session-tracker-lightweight).
+
+Companion code for my LinkedIn article **[Three Stakeholders, One Proof of Concept: Building a Real-Time Watch Session Tracker](https://www.linkedin.com/pulse/three-stakeholders-one-proof-concept-tony-honesto-rvkqc/)**. The article covers the design trade-offs: a 45-second activity window against a 10–15 second target, event-ID deduplication, two clocks, and why it was built twice.
+
+| Repo | What it is |
+|---|---|
+| [Lightweight build](https://github.com/atonyhonesto/watch-session-tracker-lightweight) | Node `http`, no runtime dependencies |
+| **[Common-libraries build](https://github.com/atonyhonesto/watch-session-tracker-express-zod)** ← you are here | Express, Zod, Supertest |
+| [Event simulator](https://github.com/atonyhonesto/watch-session-event-simulator) | PowerShell, a simulated two-minute wrestling match |
+
+---
 
 A small TypeScript + Node.js proof of concept real-time watch-session service prompt.
 
